@@ -56,11 +56,14 @@ h1 {
 }
 
 .boton {
-  display: flex;
-  padding: 0.75em;
-  border-radius: 0.4em;
-  font-size: .75em;
-  align-items:center;
-  color:white;
+  padding: .5em .75em;
+  border-radius: 0.5em;
+  color: white;
   background-color:darkred;
 } 
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5em;
+  }
